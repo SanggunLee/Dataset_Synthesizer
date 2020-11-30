@@ -165,7 +165,7 @@ FString UNVObjectMaskMananger::GetActorMaskName(const AActor* CheckActor) const
     }
     else
     {
-        if (!CheckActor->bHidden)
+        if (!CheckActor->IsHidden())
         {
             result = GetActorMaskName(ActorMaskNameType, CheckActor);
         }
@@ -176,7 +176,7 @@ FString UNVObjectMaskMananger::GetActorMaskName(const AActor* CheckActor) const
 bool UNVObjectMaskMananger::ShouldCheckActorMask(const AActor* CheckActor) const
 {
     check(CheckActor);
-    if (CheckActor && !CheckActor->bHidden)
+    if (CheckActor && !CheckActor->IsHidden())
     {
         TArray<UActorComponent*> ActorMeshComps = CheckActor->GetComponentsByClass(UMeshComponent::StaticClass());
         for (UActorComponent* CheckActorComp : ActorMeshComps)
