@@ -2,10 +2,13 @@
 NVIDIA Deep learning Dataset Synthesizer (NDDS)
 ===============================================
 
-UE4.25.4 compatible.<br>
-Use UE4.25.4 branch.<br>
-UE4.26 in progress.<br>
+UE4.26.0 is compatible only on Window, not Linux.<br>
+NDDS has a problem with UE Vulkan, but UE supports only Vulkan for Linux desktop since 4.26<br>
+
+UE4.25.4 is complatible on Window and Linux.<br>
+
 Let me know if there are bugs<br>
+
 ------------------------------
 
 Overview
